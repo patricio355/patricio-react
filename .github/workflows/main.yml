@@ -1,0 +1,27 @@
+name: Continuous Integration and Deployment
+
+on:
+  push:
+    branches:
+      - master  # Reemplaza con tu rama principal o la rama que desees monitorear
+  pull_request:
+    branches:
+      - master  # Reemplaza con tu rama principal o la rama que desees monitorear
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies and build
+        run: |
+          npm install  # Ejemplo: comando para instalar dependencias
+          npm run build  # Ejemplo: comando para construir la aplicación
+
+      - name: Deploy to server
+        run: |
+          # Comandos o scripts para desplegar la aplicación en tu servidor
+          # Por ejemplo, puede ser mediante SSH, FTP, o utilizando un servicio de hosting como Netlify, Vercel, etc.
