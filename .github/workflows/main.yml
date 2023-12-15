@@ -25,7 +25,7 @@ jobs:
           git config --global user.email "patricioquiroga35@gmail.com"
           git config --global user.name "patricio355"
         env:
-          GH_TOKEN: ${{GHTOKEN }}  # Usa el nombre de tu secreto creado en GitHub
+          GH_TOKEN: ${{ secrets.GHTOKEN }}  # Usa el nombre de tu secreto creado en GitHub
       - name: Deploy to server
         run: |
           npm run deploy
