@@ -3,10 +3,10 @@ name: Continuous Integration and Deployment
 on:
   push:
     branches:
-      - master  # Reemplaza con tu rama principal o la rama que desees monitorear
+      - master
   pull_request:
     branches:
-      - master  # Reemplaza con tu rama principal o la rama que desees monitorear
+      - master
 
 jobs:
   build:
@@ -15,18 +15,23 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
       - name: Configure Git
         run: |
           git config --global user.email "patricioquiroga35@gmail.com"
           git config --global user.name "patricio355"
-          git remote set-url origin https://${GHTOKEN}@github.com/patricio355/patricio-react.git
+          git remote set-url origin "https://github.com/patricio355/patricio-react.git"
+          git config --global credential.helper store  # Almacenar las credenciales en caché
+          git fetch origin
         env:
-          GH_TOKEN: ${{ secrets.GHTOKEN }}  # Usa el nombre de tu secreto creado en GitHub
+          GH_TOKEN: ${{ secrets.GHTOKEN }}
+
       - name: Install dependencies and build
         run: |
-          npm install  # Ejemplo: comando para instalar dependencias
-          npm run build  # Ejemplo: comando para construir la aplicación
+          npm install
+          npm run build
+
       - name: Deploy to server
         run: |
           npm run deploy
-          # Por ejemplo, puede ser mediante SSH, FTP, o utilizando un servicio de hosting como Netlify, Vercel, etc.
+
