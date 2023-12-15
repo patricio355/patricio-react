@@ -23,5 +23,5 @@ jobs:
 
       - name: Deploy to server
         run: |
-          # Comandos o scripts para desplegar la aplicación en tu servidor
+          npm run deploy
           # Por ejemplo, puede ser mediante SSH, FTP, o utilizando un servicio de hosting como Netlify, Vercel, etc.
