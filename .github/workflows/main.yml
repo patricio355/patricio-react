@@ -20,7 +20,10 @@ jobs:
         run: |
           npm install  # Ejemplo: comando para instalar dependencias
           npm run build  # Ejemplo: comando para construir la aplicación
-
+ - name: Configure Git
+        run: |
+          git config --global user.email "patricioquiroga35@example.com"
+          git config --global user.name "patricio355"
       - name: Deploy to server
         run: |
           npm run deploy
