@@ -19,6 +19,7 @@ jobs:
         run: |
           git config --global user.email "patricioquiroga35@gmail.com"
           git config --global user.name "patricio355"
+          git remote set-url origin https://${GH_TOKEN}@github.com/patricio355/patricio-react.git
         env:
           GH_TOKEN: ${{ secrets.GHTOKEN }}  # Usa el nombre de tu secreto creado en GitHub
       - name: Install dependencies and build
