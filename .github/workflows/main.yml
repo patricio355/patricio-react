@@ -15,17 +15,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Install dependencies and build
-        run: |
-          npm install  # Ejemplo: comando para instalar dependencias
-          npm run build  # Ejemplo: comando para construir la aplicación
       - name: Configure Git
         run: |
           git config --global user.email "patricioquiroga35@gmail.com"
           git config --global user.name "patricio355"
         env:
           GH_TOKEN: ${{ secrets.GHTOKEN }}  # Usa el nombre de tu secreto creado en GitHub
+      - name: Install dependencies and build
+        run: |
+          npm install  # Ejemplo: comando para instalar dependencias
+          npm run build  # Ejemplo: comando para construir la aplicación
       - name: Deploy to server
         run: |
           npm run deploy
