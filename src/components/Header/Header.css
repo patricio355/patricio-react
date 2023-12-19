@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    color: black; /* Cambia el color de los íconos a negro */
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .icon:hover {
+    color: gray; /* Cambia el color de los íconos al pasar el ratón por encima */
+  }

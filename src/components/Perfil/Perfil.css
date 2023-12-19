@@ -1,0 +1,41 @@
+body{
+  font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    /* Altura del contenedor, ajusta según sea necesario */
+  }
+  
+  .tarjeta {
+    
+    width: 400px; /* Ancho de la tarjeta, ajusta según tus necesidades */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border: solid rgb(87, 94, 87) 2px;
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20);
+    /* Agregar estilos adicionales según sea necesario */
+  }
+  
+  /* Estilos para la imagen */
+  .fotoDePerfil {
+    width: 40%; /* Ancho de la imagen, ajusta según tus necesidades */
+   /* Altura de la imagen, ajusta según tus necesidades */
+    border-radius: 5%;
+    border: solid gray 1px;
+    padding-right: 0px;
+  }
+  
+  .textoDePerfil {
+   color: rgb(255, 255, 255);
+   
+   padding-left: 10px;
+   /* Espacio entre la imagen y el texto */
+    /* Agregar estilos adicionales según sea necesario */
+  }
