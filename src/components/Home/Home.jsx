@@ -1,32 +1,30 @@
 import React from "react";
-import Perfil from "../Perfil/Perfil"
-import './Home.css'
-
+import Perfil from "../Perfil/Perfil";    
+import './Home.css';
+import ListarProyectos from "../Proyectos/ListarProyectos";
 function Home(){
+
 return(
-<body >
-    
-       
-        <div>
+
+    <div className="bodyc">
+         <div>
             <Perfil/>
         </div>
+
         <div>
         <p> Expirence</p>
-        
         </div>
+
         <div>
         <p> Proyects</p>
-        
+            <ListarProyectos></ListarProyectos>
         </div>
+
         <div>
-            <p> Contact</p>
-         
+            <p> Contacto</p>
         </div>
+    </div>
 
-   
-
-
-</body>
    
 )
 }

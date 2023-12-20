@@ -6,17 +6,21 @@ import Home from './components/Home/Home';
 function App() {
   return (
  
-        <body>
-          <div>
+        <div>
+            <div>
             <Header></Header>
           </div>
           
-         
-            <Home></Home>
+         <div>
+          <Home></Home>
+         </div>
+            
+        </div>
+        
           
           
       
-        </body>
+     
           
       
   );

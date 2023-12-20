@@ -1,0 +1,34 @@
+.cardProyecto{
+    display: flex;
+    flex-direction: row;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.imgProyecto{
+    width: 90px;
+    margin: 10px;
+}
+.imgProyecto img{
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
+.textProyect{
+    width: 200px;
+    
+}
+.textProyect h3{
+    color: aliceblue;
+}
+.textProyect p{
+    color: blueviolet;
+}
+
+.listaTarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -13,7 +13,8 @@ font-family: 'Roboto Condensed', sans-serif;
   
   .tarjeta {
     
-    width: 400px; /* Ancho de la tarjeta, ajusta según tus necesidades */
+    width: 1000px; /* Ancho de la tarjeta, ajusta según tus necesidades */
+    height: 300px;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -22,20 +23,70 @@ font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(20, 20, 20);
     /* Agregar estilos adicionales según sea necesario */
   }
+  .fotoDePerfil {
+    
+    width: 50%;
+
+    
+  }
   
   /* Estilos para la imagen */
-  .fotoDePerfil {
-    width: 40%; /* Ancho de la imagen, ajusta según tus necesidades */
+  .fotoDePerfil img {
+    width: 300px; /* Establecer el mismo ancho y alto */
+    height: 300px; /* Igualando el ancho y alto */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    max-width: 100%;
+  /* max-height: 100%; */
    /* Altura de la imagen, ajusta según tus necesidades */
-    border-radius: 5%;
+   border-radius: 50%; 
     border: solid gray 1px;
-    padding-right: 0px;
+
+    
+    padding-bottom: 0%;
+   
   }
   
   .textoDePerfil {
    color: rgb(255, 255, 255);
-   
-   padding-left: 10px;
+   width: 100%;
+   padding-left: px;
+   display: flex;
+   flex-direction: column;
    /* Espacio entre la imagen y el texto */
     /* Agregar estilos adicionales según sea necesario */
   }
+
+ 
+
+  .textoDePerfil h1{
+    color: rgb(255, 255, 255);
+   margin-bottom: 2%;
+    align-self: center;
+    /* Espacio entre la imagen y el texto */
+     /* Agregar estilos adicionales según sea necesario */
+   }
+
+   .textoDePerfil p{
+    color: rgb(255, 255, 255);
+   margin-bottom: 2%;
+    align-self: center;
+     
+    margin-left: 40px;
+    /* Espacio entre la imagen y el texto */
+     /* Agregar estilos adicionales según sea necesario */
+   }
+
+  .papa{
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .botones{
+    margin: 10px;
+    display: flex;
+   
+    
+  }
+
