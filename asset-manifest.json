@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/patricio-react/static/css/main.829677ae.css",
-    "main.js": "/patricio-react/static/js/main.381bc887.js",
+    "main.css": "/patricio-react/static/css/main.c4395c18.css",
+    "main.js": "/patricio-react/static/js/main.8af1c938.js",
     "static/js/787.ba0e71cb.chunk.js": "/patricio-react/static/js/787.ba0e71cb.chunk.js",
     "static/media/fotoDePerfil.webp": "/patricio-react/static/media/fotoDePerfil.fd743c418c65c8bb3d46.webp",
     "index.html": "/patricio-react/index.html",
-    "main.829677ae.css.map": "/patricio-react/static/css/main.829677ae.css.map",
-    "main.381bc887.js.map": "/patricio-react/static/js/main.381bc887.js.map",
+    "main.c4395c18.css.map": "/patricio-react/static/css/main.c4395c18.css.map",
+    "main.8af1c938.js.map": "/patricio-react/static/js/main.8af1c938.js.map",
     "787.ba0e71cb.chunk.js.map": "/patricio-react/static/js/787.ba0e71cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.829677ae.css",
-    "static/js/main.381bc887.js"
+    "static/css/main.c4395c18.css",
+    "static/js/main.8af1c938.js"
   ]
 }
