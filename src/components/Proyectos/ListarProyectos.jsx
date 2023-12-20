@@ -3,7 +3,7 @@ import './ListarProyectos.css';
 
 function ListarProyectos() {
   const [data, setData] = useState(null);
-  const accessToken = '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'; 
+  const accessToken = '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'; 
 
   useEffect(() => {
     fetch('https://api.github.com/user/repos', {
