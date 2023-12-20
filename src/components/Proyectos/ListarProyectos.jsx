@@ -3,7 +3,7 @@ import './ListarProyectos.css';
 
 function ListarProyectos() {
   const [data, setData] = useState(null);
-  const accessToken = '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'; 
+  const accessToken = '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'; 
 
   useEffect(() => {
     fetch('https://api.github.com/user/repos', {
@@ -12,16 +12,15 @@ function ListarProyectos() {
         Authorization: `token ${accessToken}`
       }
     })
-    .then(response => response.json())
-    .then(data => {
-      // Filtrar los elementos que tengan el atributo 'name' igual a 'patri'
-      const filteredData = data.filter(item => item.owner.login === 'patricio355');
-      setData(filteredData);
-      
-    })
-    .catch(error => {
-      console.error('Error al obtener datos:', error);
-    });
+      .then(response => response.json())
+      .then(data => {
+        // Filtrar los elementos que tengan el atributo 'name' igual a 'patri'
+        const filteredData = data.filter(item => item.owner.login === 'patricio355');
+        setData(filteredData);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   }, []); // El segundo argumento es un array vacío para que el efecto se ejecute solo una vez (equivalente a componentDidMount)
 
   return (
@@ -33,9 +32,7 @@ function ListarProyectos() {
           </div>
           <div className="textProyect">
             <h3>{proyecto.name}</h3>
-            <h6>
-            lenguajes
-</h6>
+            <h6>{proyecto.language}</h6>
             <div className="icono">
               <a href={proyecto.svn_url} target="_blank" rel="noopener noreferrer">IR</a>
             </div>
