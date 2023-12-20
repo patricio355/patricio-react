@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/patricio-react/static/css/main.c4395c18.css",
-    "main.js": "/patricio-react/static/js/main.9f0b86c0.js",
+    "main.js": "/patricio-react/static/js/main.19d9beaf.js",
     "static/js/787.ba0e71cb.chunk.js": "/patricio-react/static/js/787.ba0e71cb.chunk.js",
     "static/media/fotoDePerfil.webp": "/patricio-react/static/media/fotoDePerfil.fd743c418c65c8bb3d46.webp",
     "index.html": "/patricio-react/index.html",
     "main.c4395c18.css.map": "/patricio-react/static/css/main.c4395c18.css.map",
-    "main.9f0b86c0.js.map": "/patricio-react/static/js/main.9f0b86c0.js.map",
+    "main.19d9beaf.js.map": "/patricio-react/static/js/main.19d9beaf.js.map",
     "787.ba0e71cb.chunk.js.map": "/patricio-react/static/js/787.ba0e71cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4395c18.css",
-    "static/js/main.9f0b86c0.js"
+    "static/js/main.19d9beaf.js"
   ]
 }
